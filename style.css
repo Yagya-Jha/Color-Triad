@@ -1,0 +1,66 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+  }
+canvas {
+  display: block;
+}
+
+@keyframes background-pan {
+  from {
+    background-position: 0% center;
+  }
+
+  to {
+    background-position: -200% center;
+  }
+}
+  
+h1{
+  margin-top: 18%;
+  animation: background-pan 5s linear infinite;
+  font-family:'Copperplate Gothic Light';
+  background: linear-gradient(
+      to right,
+      rgb(255, 0, 0),
+      rgb(0,255,0),
+      rgb(0,0,255),
+      rgb(255,0,255),
+      rgb(160, 32, 240),
+      rgb(255,0,0)
+    );
+  background-size: 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 420%;
+  text-shadow: 0 10px 30px rgba(255, 127, 127, 0.5);
+}
+
+button{
+  margin-top: 50%;
+  border-top-left-radius: 25%;
+  border-top-right-radius: 25%;
+  border-bottom-right-radius: 15%;
+  border-bottom-left-radius: 15%;
+  height: 15vh;
+  width: 50%;
+  font-size: 350%;
+  margin-left: 24%;
+  color: white;
+  background: linear-gradient(
+    to right,
+    rgb(200,0,255),
+    rgb(255,0,255),
+    rgb(200,0,255)
+    );
+    text-shadow:0 1px 0 #ccc, 0 2px 0 #ccc,
+                0 3px 0 #ccc, 0 4px 0 #ccc,
+                0 20px 30px rgba(0, 0, 0, 0.5);
+    
+    font-family:'Perpetua'
+}
